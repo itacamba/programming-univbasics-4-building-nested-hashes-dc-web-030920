@@ -54,15 +54,14 @@ def monopoly_with_fourth_tier
 													three_pieces_owned: 100,
 													four_pieces_owned: 200},
 								 	names: {
-									 				reading_railroad:{},
-													pennsylvania_railroad:{},
-													b_and_o_railroad:{},
-													shortline_railroad:{}
+									 				reading_railroad:{ mortgage_value: "$1"},
+													pennsylvania_railroad:{ mortgage_value: "$1"},
+													b_and_o_railroad:{ mortgage_value: "$1"},
+													shortline_railroad:{ mortgage_value: "$1"}
 													}
 								}
 						 }
 	p my_hash
-my_hash[:railroads][:names][:reading_railroad] = {mortgage_value: "$2"}
 my_hash[:railroads][:names][:reading_railroad][:mortgage_value] = "$100"
 
 end
